@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site2.master.cs" Inherits="Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Passport Watermark Application
+                </h1>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/ListAllForms2.aspx" Text="Waiting App List"/>
+                        <asp:MenuItem NavigateUrl="~/VerifiedList.aspx" Text="Verified App List"/>
+                        <asp:MenuItem NavigateUrl="~/CardList.aspx" Text="Card List"/>
+                        <asp:MenuItem NavigateUrl="~/Logout.aspx" Text="Sign Out"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

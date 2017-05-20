@@ -1,0 +1,229 @@
+\documentclass{ths}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{setspace}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage {epsfig}
+\usepackage{listings}
+\lstset{language=Python}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage {pdfpages}
+
+%\usepackage[usenames, dvipsnames]{color}
+%\usepackage[pdftex]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{aeguill}
+\usepackage{pslatex}
+\usepackage{enumerate}
+%\usepackage{pxfonts}
+%\usepackage[pdftex]{graphicx,color}
+\usepackage{%
+  babel,
+  algorithmic,
+  algorithm,
+  caption
+}
+\setstretch{1.5}
+%\usepackage{url}
+%\usepackage[breaklinks=true]{hyperref}
+\usepackage[intoc]{nomencl}
+%\usepackage{color}
+%\renewcommand{\nomname}{Abbreviations}
+%\makenomenclature
+\makeindex
+\begin{document}
+\titleformat{\chapter}[display]
+ {\normalfont\large\bfseries\centering\vskip 0cm\headsep 0.2in}{\chaptertitlename\ \thechapter}{14pt}{\large}
+\pagenumbering{roman}
+
+
+\prefacesection{Acknowledgement}
+\par A project of this magnitude has been a journey with various ups and downs. It was the support from Guide, Colleagues and family, which has helped me in the successful accomplishment of this project.\\
+	\par I am glad to express my sentiments of gratitude to all who rendered their valuable help for the successful completion of the project.\\
+\par I am thankful to my guide Prof. Snehal M. Kamlapur, for her guidance and encouragement in this work. Her expert suggestions and scholarly feedback had greatly enhanced the effectiveness of this work.\\
+\par I am also thankful to Prof. Dr. Shirish Sane, Head of Department, Computer Science, K.K.W.I.E.E.R., Nashik, Prof.N.M.Shahane and Prof.Kulkarni for the interest shown in this project by timely suggestions and helpful guidance.
+I would also like to express my appreciation and thanks to Prof. Dr. K. N. Nandurkar, Principal, K.K.W.I.E.E.R., Nashik.\\
+\par I would also like to express my appreciation and thanks to all my colleagues and family members who knowingly or unknowingly have assisted and encouraged me throughout my journey.
+\acknowledgeauthor
+% Use following command at the command prompt to display the Abbreviations
+% makeindex thesis.nlo -s nomencl.ist -o thesis.nls
+\newpage
+%\addcontentsline{toc}{chapter}{List of Abbreviations}
+%\printnomenclature
+%
+\prefacesection{List of Publications}
+\begin{table}[h]
+\caption*{ }
+\label{rerrparan}
+% use packages: array
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+%
+\begin{tabular}{|c|l|l|c|c|} \hline  %\cline{0-3}
+\mc{1}{|c|}{SN} & \mc{1}{|c|}{Name of Conference or} & \mc{1}{|c|}{National or} & \mc{1}{|c|}{Date}& \mc{1}{|c|}{ISSN No}\\
+\mc{1}{|c|}{} & \mc{1}{|c|}{ Journal} & \mc{1}{|c|}{International } & \mc{1}{|c|}{}& \mc{1}{|c|}{}\\ \hline \hline
+\mc{1}{|c|}{1} & \mc{1}{|c|}{c-PGCON-12} & \mc{1}{|c|}{National  } & \mc{1}{|c|}{21-22 April }& \mc{1}{|c|}{--}\\
+\mc{1}{|c|}{} & \mc{1}{|c|}{} & \mc{1}{|c|}{ Conference } & \mc{1}{|c|}{ 2012}& \mc{1}{|c|}{}\\\hline
+
+\mc{1}{|c|}{} & \mc{1}{|c|}{ International Journal  } & \mc{1}{|c|}{} & \mc{1}{|c|}{}& \mc{1}{|c|}{ISSN:2277-4408}\\
+\mc{1}{|c|}{2} & \mc{1}{|c|}{ of Computer Science  } & \mc{1}{|c|}{International} & \mc{1}{|c|}{01 June 2012}& \mc{1}{|c|}{}\\
+\mc{1}{|c|}{} & \mc{1}{|c|}{ Information and Engg.,} & \mc{1}{|c|}{ Journal} & \mc{1}{|c|}{}& \mc{1}{|c|}{}\\
+\mc{1}{|c|}{} & \mc{1}{|c|}{Technologies} & \mc{1}{|c|}{} & \mc{1}{|c|}{}& \mc{1}{|c|}{}\\ \hline
+
+\mc{1}{|c|}{} & \mc{1}{|c|}{ International Journal  } & \mc{1}{|c|}{} & \mc{1}{|c|}{}& \mc{1}{|c|}{}\\
+\mc{1}{|c|}{3} & \mc{1}{|c|}{ of Communication  } & \mc{1}{|c|}{International} & \mc{1}{|c|}{June-Dec 12}& \mc{1}{|c|}{}\\
+\mc{1}{|c|}{} & \mc{1}{|c|}{ and Networking} & \mc{1}{|c|}{ Journal} & \mc{1}{|c|}{}& \mc{1}{|c|}{}\\
+\mc{1}{|c|}{} & \mc{1}{|c|}{System [IIR]} & \mc{1}{|c|}{} & \mc{1}{|c|}{}& \mc{1}{|c|}{}\\ \hline
+\end{tabular}
+%\end{center}
+\end{table}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+%\beforepreface
+%\newpage
+%\clearpage
+%\pagestyle{plain}
+\prefacesection{\textbf{ABSTRACT}}
+%\newpage
+%\centerline{\large{ \textbf{ABSTRACT}}}
+In the recent years, the use of digital media has grown rapidly with the internet. Since digital media is easily reproduced and manipulated, protection of digital content became a serious problem. For protection purpose, digital image is select as safeguard.  Robust regions of an image are mainly used to sign copyright information. And the effectiveness of a digital image is identified by the robustness of image candidate regions. It may be useful to provide efficient means for copyright protection. But robust region detection of image feature is a crucial task. Thus, to provide security with the use of multimedia information this system aims "Selection for robust regions set and implying higher robustness for digital image using optimization algorithm". A feature based "secure digital scheme" is proposed here. This feature based work is based on simulated attacking and optimization solving procedure. Feature involves simply the amount of resources to describe a large set of data accurately. Thus, image transformations techniques are being used for extraction of local features. Corner detector is used to extract local feature. Some predefined attacks are performed to evaluate the robustness of every candidate feature region. According to the evaluation results, a track-with-pruning procedure is adopted to search a minimal primary feature set which may resists the most predefined attacks. This work is formulated as a multidimensional knapsack problem and solved by optimization algorithms. The experimental results gives comparative analysis for Genetic Algorithm, Particle Swarm Optimization and Simulated Annealing to determine best technique of optimization algorithm for selection of feature region set.Thus,this system analyzes the key technologies of digital image and explores the application in which robustness of a digital image is a primary key.\\ \\
+\textbf{Keywords} - Feature, optimization, robust, simulated attacks
+%\pagestyle{fancy}
+%---------------------------------------------------------------------
+\definecolor{gray}{rgb}{0.358411, 0.165, 0.44971}
+\cfoot{
+\footnotesize{\textcolor{gray}{KKWIEER, Department of Computer Engineering, 2012-2013}}}
+%\cfoot{``SELECTION OF'' }
+%\textcolor{gray}{KKWIEER, Department of Computer Engineering, 2011-2012}
+\rfoot{\small{\thepage}}
+
+%-------------------------------------------------------------------
+\afterpreface
+												\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\chapter{SYNOPSIS}
+\pagenumbering{arabic}
+
+\input{./Chapters/Chapter1}
+%\chapter{SYNOPSIS}
+\input{./Chapters/Chapter2}
+%\chapter{TECHNICAL KEYWORDS}
+\input{./Chapters/Chapter3}
+\input{./Chapters/Chapter4}
+\input{./Chapters/Chapter5}
+\input{./Chapters/Chapter6}
+\input{./Chapters/Chapter7}
+\input{./Chapters/Chapter8}
+\input{./Chapters/Chapter9}
+\input{./Chapters/Chapter10}
+\input{./Chapters/Chapter11}
+\input{./Chapters/Chapter12}
+
+%-----------------------------------------abhorase
+
+%\input{chapter_1}
+%\chapter{TECHNICAL KEYWORDS}
+%\input{chapter_2}
+%\chapter{INTRODUCTION}
+%\input{chapter_3}
+%\begin{center}
+%\chapter{PROBLEM DEFINITION AND SCOPE}
+%\end{center}
+%\input{chapter_4}
+%\chapter{DISSERTATION PLAN}
+%\input{chapter_5}
+%\chapter{SOFTWARE REQUIREMENTS SPECIFICATION}
+%\input{chapter_6}
+%\chapter{DETAILED DESIGN DOCUMENT}
+%\input{chapter_7}
+%\chapter{TEST SPECIFICATION}
+%\input{chapter_8}
+%\chapter{FUTURE ENHANCEMENT}
+%\input{chapter_9}
+%\chapter{SUMMARY AND CONCLUSION}
+%\input{chapter_10}
+%----------------------------------------abhorase
+%\appendix
+%\chapter{ANNEXURE [MATHEMATICAL MODEL]}
+%\input{chapter_11_A}
+%\chapter{ANNEXURE [DISSERTATION WORKSTATION AND INSTALLATION REPORT]}
+%\input{chapter_11_B}
+%\chapter{ANNEXURE [MODULE DEVELOPMENT PLAN, MODULE DESCRIPTION]}
+%\input{chapter_11_c}
+%\chapter{ANNEXURE [TEST DATA]}
+%\input{chapter_11_d}
+%\chapter{ANNEXURE [DISSERTATION ANALYSIS]}
+%\input{chapter_11_e}
+%\chapter{ANNEXURE F}
+%\input{chapter_11_f}
+%\chapter{references}
+\bibliographystyle{IEEEtran}
+%-----------------------------------------abhorase
+%\bibliographystyle{plain}
+%\bibliography{gkp2}
+\begin{thebibliography}{1}
+\bibitem{b}Jen-Sheng Tsai, Win-Bin Huang, and Yau-Hwang Kuo , "On the Selection Optimal Feature Region Set for Robust Digital Image Watermarking", in IEEE TRANSACTIONS ON IMAGE  PROCESSING, VOL. 20, NO. 3,  MARCH 2011
+\bibitem{b1} I. J. Cox, J. Kilian, F. T. Leighton, and T. Shamoon, “Secure spread
+spectrum watermarking for multimedia,” IEEE Trans. Image Process.,
+vol. 6, no. 12, pp. 1673–1687, Dec. 1997.
+
+\bibitem{b3}C. S. Lu, S. K. Huang, C. J. Sze, and H. Y. Mark Liao, "Cocktail watermarking for digital image          protection," IEEE Trans. Multimedia, vol. 2, no. 4, pp. 209-224, Dec. 2000.
+
+\bibitem{b4}V. Licks and R. Jordan, "Geometric attacks on image watermarking systems," IEEE Multimedia Magazine, vol. 12, no. 3, pp. 68-78, Jul.-Sep. 2005.
+
+\bibitem{b5} J. ORuanaidh and T. Pun, “Rotation, scale and translation invariant
+spread spectrum digital image watermarking,” Signal Process., vol. 66,
+no. 3, pp. 303–317, May 1998.
+
+\bibitem{b6} C. Y. Lin, M. Wu, J. A. Bloom, I. J. Cox, M. L. Miller, and Y. M.
+Lui, “Rotation, scale and translation resilient watermarking for image,”
+IEEE Trans. Image Process., vol. 10, no. 5, pp. 767–782, May 2001.
+
+\bibitem{b9}M. Kutter, “Watermarking resisting to translation, rotation and
+scaling,” Proc. SPIE, vol. 3528, pp. 423–431, Nov. 1998.
+
+\bibitem{b13} C. W. Tang and H. M. Hang, "A feature-based robust digital image watermarking scheme," IEEE Trans. Signal Process., vol. 51, no. 4, pp. 950-959, Apr. 2003.
+
+\bibitem{b14}  H. Y. Lee, H. Kim, and H. K. Lee, "Robust image watermarking using local invariant features," J. SPIE, Opt. Eng., vol. 45, no. 3, pp. 037002-1-037002-11, Mar. 2006.
+\bibitem{b15}J. S. Seo and C. D. Yoo, "Image watermarking based on invariant regions of scale-space  representation," IEEE Trans. Signal Process., vol.      54, no. 4, pp. 1537-1549, Apr. 2006.
+
+\bibitem{b17} J. S. Tsai, W. B. Huang, C. L. Chen, and Y. H. Kuo, "A feature-based digital image watermarking for copyright protection and content authentication, "in Proc. IEEE Int. Conf. Image Process., Sep. 200, vol.5, pp. 469-472.
+\bibitem{b19}. A. P. Petitcolas, "Watermarking schemes evaluation," IEEE Signal Process. Mag., vol. 17, no. 5, pp. 58-64, Sep. 2000.
+
+\bibitem{b21} P. C. Chu and J. E. Beasley, “A genetic algorithm for the multidimensional
+knapsack problem,” J. Heuristics, vol. 4, pp. 63–86, Jun. 1998.
+\bibitem{b23} D. G. Lowe, “Distinctive image features from scale-invariant keypoints,”
+Int. J. Comput. Vis., vol. 60, no. 2, pp. 91–110, Nov. 2004.
+\bibitem{b24} K. Mikolajczyk, T. Tuytelaars, C. Schmid, A. Zisserman, J. Matas, F.
+Schaffalitzky, T. Kadir, and L. Van Gool, “A comparison of affine region
+detectors,” Int. J. Comput. Vis., vol. 65, no. 1–2, pp. 43–72, Nov.
+2005.
+\bibitem{b25} C. Schmid, R. Mohr, and C. Bauckhage, “Evaluation of interest point
+detectors,” Int. J. Comput. Vis., vol. 37, no. 2, pp. 151–172, Jun. 2000.
+
+\bibitem{o1} Golderberg, David E., Genetic Algorithms: in Search, Optimization and Machine Learning, Addison-Wesley Publishing Company, Inc., New York, 1989.
+\bibitem{o2}Sadiq M. Sait and Habib Youssef, Iterative Computer Algorithms with Application to Engineering: Solving Combinatorial Optimization Problems, IEEE Computer Society, LA, 1999.
+\bibitem{o3}George S. Tarasenko, Stochastic Optimization in the Soviet Union Random Search Algorithms, Delphic Associates, Inc., VA, 1985.
+\bibitem{g1}Riccardo Poli, William B. Langdon and Nicholas F.    McPhee "A Field Guide to Genetic Programming" University of Essex - UK rpoli@essex.ac.uk
+\bibitem{p1} Konstantinos E. Parsopoulos, Michael  N. Vrahatis, " Particle Swarm Optimization for Constrained  optimization Algorithms"
+\bibitem{s1}Duc Truong Pham and Dervis Karaboga, Intelligent Algorithms, tabu search, simulated annealing and neural networks, Springer, New York, 1998.
+\end{thebibliography}
+%Use following command at the command prompt to display the Index
+% makeindex thesis
+\newpage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+\end{document} 

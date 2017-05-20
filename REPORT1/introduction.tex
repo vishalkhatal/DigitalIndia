@@ -1,0 +1,34 @@
+\chapter{INTRODUCTION}
+\definecolor{gray}{rgb}{0.358411, 0.165, 0.44971}
+\lfoot{
+\footnotesize{\textcolor{gray}{Topic Name}}}
+%\cfoot{``SELECTION OF'' }
+%\textcolor{gray}{KKWIEER, Department of Computer Engineering, 2011-2012}
+\rfoot{\small{\thepage}}
+
+
+
+
+\section{\normalsize{\textbf{Detailed Problem Definition}}}
+The aim of the project is to address one of the important and challenging problems large-scale content-based face image retrieval. Given a query face image, content-based face image retrieval tries to find similar face images from a large image database by detecting facial attributes of given query image. It is an enabling technology for many applications including automatic face annotation, crime investigation.
+
+\section{\normalsize{\textbf{Current Market Survey}}}
+Image processing is computer imaging where application involves a human being in the visual loop. In other words the image is to be examined and acted upon by people. Face recognition is not perfect and struggles to perform under certain conditions. Ralph Gross, a researcher at the Carnegie Mellon Robotics Institute, describes one obstacle related to the viewing angle of the face: “Face recognition has been getting pretty good at full frontal faces and 20 degrees off, but as soon as you go towards profile, there have been problems. Other conditions where face recognition does not work well include poor lighting, sunglasses, long hair, or other objects partially covering the subjects face, and low resolution images. Another serious disadvantage is that many systems are less effective if facial expressions vary. Even a big smile can render the system less effective. For in- stance: Canada now allows only neutral facial expressions in passport photos. The need to find a desired face from a collection is shared by many professional groups, including journalists, design engineers and art historians. While the requirements of image users can vary considerably, it can be useful to characterize image queries into three levels of abstraction: primitive features such as shape, logical features such as the identity of objects shown and abstract attributes such as the significance of the scenes depicted. While systems currently operate effectively only at the lowest of these levels, most users demand higher levels of retrieval.
+
+\section{\normalsize{\textbf{Need of the System}}}
+Retrieving faces according their attributes from large database is an important task has a wide range of applications such as Crime Investigation, In Medical field, Face detection System. However, retrieving face images from database based on low level attribute is not easy but does not given perfect result. In other words, retrieving face images from database based on low level high level attribute is not easy but gives perfect result with great efficiency than existing system. Traditional methods for face image retrieval usually use low level features to represent faces but low-level features are lack of semantic meanings and face images usually have high intra-class variance (e.g., expression, posing), so the retrieval results are unsatisfactory. To tackle this problem, other proposes to use identity based quantization Chenetal.Propose to use identity-constrained sparse coding, but these methods might require clean training data and massive human annotations. Using fisher vectors with attributes for large-scale image retrieval, but they use early fusion to combine the attribute scores. Also, they do not take advantages of human attributes because their target is general image retrieval.
+\newline \textbf{Major contributions of this work are summarized as follows:} 
+Although human attributes have been shown useful on applications related to face images, it is non-trivial to apply it in content-based face image retrieval task due to several reasons. First, human attributes only contain limited dimensions. When there are too many people in the dataset, it loses discriminability because certain people attributes. Second, human attributes are represented as a vector of floating points. It does not work well with developing large-scale indexing methods, and therefore it suffers from slow response and scalability issue when the data size is huge.
+ 
+\section{\normalsize{\textbf{Advances to the previous system}}}
+Drawbacks of existing approaches System ignore strong, face specific geometric constraints among different visual words in a face image. Recent works on face recognition have proposed various discriminative facial features. How- ever, these features are typically high-dimensional and global, thus not suitable for quantization and inverted indexing. In other words, using such global features in a retrieval system requires essentially a linear scan of the whole database in order to process a query, which is prohibitive for a web-scale image database.
+\newline 
+In this work the System proposes two orthogonal methods named attribute-enhanced sparse coding and attribute-embedded inverted indexing. Attribute enhanced sparse coding exploits the global structure of feature space and uses several important human attributes combined with low-level features to construct semantic code words in the off-line stage. On the other hand, attribute-embedded inverted indexing locally considers human attributes of the designated query image in a bi- nary signature and provides efficient retrieval in the on-line stage. By incorporating These two methods, we build a large-scale content-based face image retrieval system by taking advantages of both low-level (appearance) features and high-level (Facial) semantics.
+
+\section{\normalsize{\textbf{Organization of the report}}}
+The rest of the report is organized as follows: chapter 2 will do the requirement analysis with product function, project plan and team structure, chapter 3 will does the methodologies used for implementation, chapter 4 will show the modeling and design.
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../mainrepUG"
+%%% End: 

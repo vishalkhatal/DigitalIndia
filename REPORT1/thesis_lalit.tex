@@ -1,0 +1,112 @@
+\documentclass{ths}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{setspace}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage {epsfig}
+\usepackage{listings}
+\lstset{language=Python}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage {pdfpages}
+\documentclass[12pt]{amsart}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\geometry{a4paper}
+\usepackage[T1]{fontenc} 
+\usepackage{ae,aecompl}
+\usepackage{aeguill}
+\usepackage{pslatex}
+\usepackage{enumerate}
+\usepackage{%
+  babel,
+  algorithmic,
+  algorithm,
+  caption
+}
+\setstretch{1.5}
+\usepackage[intoc]{nomencl}
+\makeindex
+\begin{document}
+\title{FINAL-YEAR PROJECT REPORT WRITING GUIDELINES}
+\author{NIKHI m wagh}
+\date{4 Feb 2013}
+
+\maketitle
+
+
+
+\title format{\chapter}
+ {\normalfont\large\bfseries\vskip 0cm\headsep 0.2in}{\chaptertitlenames}{16pt}{\large}
+\pagenumbering{roman}
+
+\newpage
+\centerline{\large{ \textbf{ABSTRACT}}}
+\addcontentsline{toc}{chapter}{Abstract}
+\vspace{1.5 cm}
+Large-scale content-based face image retrieval is an enabling technology for many emerging applications. Existing system ignore strong, face specific geometric constraints among different visual words in a face image. Recent works on face recognition have proposed various discriminative facial features. However, these features are typically high-dimensional and global, thus not suitable for quantization and inverted indexing. There are two orthogonal methods: attribute- enhanced sparse coding and attribute embedded inverted indexing. Attribute-enhanced sparse coding exploits the global structure of feature space and uses several important human attributes combined with low level features to construct semantic code words in the offline stage. On the other hand, attribute-embedded inverted indexing locally considers human attributes of the designated query image in a bi- nary signature and provides efficient retrieval in the online stage. The System may include modules like Content base image search, Attribute base search and Face image retrieval. The proposed System can achieve higher Scalability with Efficient Content Based Image retrieval.
+\newline \textbf{Keywords: }
+Content-Based Image Retrieval Face Image, Human Attributes, Inverted Indexing
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+%---------------------------------------------------------------------
+
+%-------------------------------------------------------------------
+\afterpreface
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+
+\input{introduction}
+%\chapter{SYNOPSIS}
+\input{requirementanalysis}
+%\chapter{TECHNICAL KEYWORDS}
+\input{methodology}
+\input{ModelingandDesign}
+\input{results}
+\input{testing}
+
+\appendix
+\chapter{Appendix A}
+\input{chapter_A}
+\chapter{Appendix B}
+\input{chapter_B}
+\end{appendix}
+\newpage
+\prefacesection{Bibliography}
+%s\bibliographystyle{IEEEtran}
+
+%\begin{thebibliography}{1}
+\begin{enumerate}
+\item Ando, R. K., and Zhang, T. Two-view feature generation model for semi-supervised learning. In ICML '07 (2007)\\
+\item AnusuaTrivedi, PiyushRai, Scott L. DuVall "Exploiting Tag and Word  Correlations for Improved Webpages Clustering "SMUC'10, October 30,2010, Toronto, Ontario, Canada. Copyright 2010 ACM.
+
+\item AntonelaTommasel and Daniela Godoy, "Semantic enrichment of social annotations for Webresource classification"JAIIO - ASAI 2012
+\item ArkaitzZubiaga, Raquel Mart�nez,V�ctor Fresno "Getting the Most Out of Social Annotations for Web PageClassification"Document Engineering, pages 74-83 , 2009.
+\end{enumerate}
+
+\prefacesection{Acknowledgement}
+ With Deep Sense of Gratitude, We would like to Thanks all the People who have lit our path with their kind guidance. We are very Grateful to those intellectuals who did their best to help during our Project work for this semester. It is our proud privilege to express deep sense of gratitude to, Prof.S.S.Sane Sir for his comments and kind permission to complete this project work for this Semester We remain indebted to Project Coordinator Prof. and Project Guide Prof.S.S.Bhandare for their timely suggestion and valuable guidance. The special gratitude goes to all the staff members, technical staff members, of computer engineering department for their expensive, excellent and precious guidance in completion of this work. We thank to all the colleagues for their appreciable for our working project.	
+%-----------------------------------------abhorase
+%\bibliographystyle{IEEEtran}
+%\bibliographystyle{plain}
+%s\bibliography{gkp2}
+\end{document} 
